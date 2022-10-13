@@ -1,0 +1,42 @@
+{
+    // Editor
+    "editor.fontFamily": "Fira Code",
+    "editor.suggestSelection": "first",
+    "editor.minimap.enabled": false,
+    "editor.rulers": [
+        80
+    ],
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "files.autoSave": "onFocusChange",
+    "security.workspace.trust.banner": "never",
+    "telemetry.telemetryLevel": "off",
+
+    // Workbench
+    "breadcrumbs.enabled": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.editor.enablePreview": false,
+    "workbench.enableExperiments": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.startupEditor": "none",
+    "workbench.activityBar.visible": false,
+    "workbench.preferredDarkColorTheme": "Solarized Light",
+    "workbench.statusBar.visible": false,
+    "workbench.tips.enabled": false,
+    "workbench.tree.expandMode": "singleClick",
+
+    // Languages and tools
+    "python.languageServer": "Pylance",
+    "python.testing.autoTestDiscoverOnSaveEnabled": false,
+    "git.showInlineOpenFileAction": false,
+    "python.experiments.enabled": false,
+    "python.terminal.activateEnvironment": false
+}
