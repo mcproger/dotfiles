@@ -2,6 +2,9 @@
 
 set -e
 
+SHELL='/bin/bash'
+export SHELL
+
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
