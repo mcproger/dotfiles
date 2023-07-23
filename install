@@ -20,4 +20,4 @@ run_dotbot () {
     -c "$config" "${@}"
 }
 
-run_dotbot "install.conf.yaml" || true
+run_dotbot 'install.conf.yaml' || true
