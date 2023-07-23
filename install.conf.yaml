@@ -5,8 +5,13 @@
 
 - clean: ["~"]
 
-# See https://ohmyz.sh/
 - shell:
+  - command: |
+      sh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    description: Install Homebrew
+    stdout: true
+    stderr: true
+  # See https://ohmyz.sh/
   - command: |
       sh -c \
         "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -15,8 +20,12 @@
     stderr: true
 
 - link:
-    # See https://ohmyz.sh/
     # Terminal
     ~/.zshrc:
       path: shell/zshrc
       force: true
+    # VS Code
+    "~/Library/Application Support/Code/User/settings.json":
+      if: '[ `uname` = Darwin ]'
+      path: vscode/settings.json
+      create: true

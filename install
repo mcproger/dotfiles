@@ -16,4 +16,9 @@ run_dotbot () {
     "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 }
 
+install_brew_deps() {
+    brew bundle
+}
+
 run_dotbot
+install_brew_deps
