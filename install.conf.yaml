@@ -1,27 +1,23 @@
 - defaults:
     link:
+      create: true
       relink: true
 
-- clean: ['~']
-
-# See https://ohmyz.sh/
-- shell:
-  - command: |
-      sh -c \
-        "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-      || true
-    description: Install Oh-My-Zsh
-    stdout: true
-    stderr: true
+- clean: ["~"]
 
 - link:
-  # Terminal
-  ~/.zshrc:
-    path: config/zshrc
-    force: true
+    # See https://ohmyz.sh/
+    - shell:
+      - command: |
+          sh -c \
+            "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        description: Install Oh-My-Zsh
+        stdout: true
+        stderr: true
+    # Terminal
+    ~/.zshrc:
+      path: shell/zshrc
+      force: true
 
-  # SSH:
-  ~/.ssh/config:
-    path: config/ssh_config
-    force: true
-    create: true
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

@@ -2,6 +2,7 @@
 
 set -e
 
+CONFIG="install.conf.yaml"
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
@@ -12,12 +13,7 @@ git -C "${DOTBOT_DIR}" submodule sync --quiet --recursive
 git submodule update --init --recursive "${DOTBOT_DIR}"
 
 run_dotbot () {
-  local config
-  config="$1"
-
-  "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" \
-    -d "${BASEDIR}" \
-    -c "$config" "${@}"
+    "${BASEDIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASEDIR}" -c "${CONFIG}" "${@}"
 }
 
-run_dotbot 'install.conf.yaml' || true
+run_dotbot
