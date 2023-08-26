@@ -20,6 +20,8 @@ cask "firefox"
 cask "iterm2"
 cask "obsidian"
 cask "spotify"
+cask "steam"
 cask "telegram-desktop"
 cask "tomatobar"
 cask "visual-studio-code"
+
