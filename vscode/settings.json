@@ -13,6 +13,8 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "files.autoSave": "onFocusChange",
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
     "security.workspace.trust.banner": "never",
     "telemetry.telemetryLevel": "off",
 
@@ -38,5 +40,6 @@
     "python.testing.autoTestDiscoverOnSaveEnabled": false,
     "git.showInlineOpenFileAction": false,
     "python.experiments.enabled": false,
-    "python.terminal.activateEnvironment": false
+    "python.terminal.activateEnvironment": false,
+    "extensions.ignoreRecommendations": true
 }
