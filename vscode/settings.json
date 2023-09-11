@@ -27,7 +27,6 @@
     "workbench.editor.untitled.hint": "hidden",
     "workbench.editor.enablePreview": false,
     "workbench.enableExperiments": false,
-    "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
     "workbench.activityBar.visible": false,
     "workbench.preferredDarkColorTheme": "Solarized Light",
@@ -41,5 +40,7 @@
     "git.showInlineOpenFileAction": false,
     "python.experiments.enabled": false,
     "python.terminal.activateEnvironment": false,
-    "extensions.ignoreRecommendations": true
+    "extensions.ignoreRecommendations": true,
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false
 }

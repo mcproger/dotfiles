@@ -8,9 +8,12 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# pyenv section
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export PATH="/Users/mcproger/.pyenv/shims:${PATH}"
 eval "$(pyenv init -)"
 
-alias gd='git diff --name-only --relative --diff-filter=d | xargs bat --diff'
+# poetry section
+export PATH="/Users/mcproger/.local/bin:$PATH"
+export POETRY_VIRTUALENVS_IN_PROJECT="true"
