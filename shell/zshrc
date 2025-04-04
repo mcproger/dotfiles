@@ -17,3 +17,8 @@ eval "$(pyenv init -)"
 # poetry section
 export PATH="/Users/mcproger/.local/bin:$PATH"
 export POETRY_VIRTUALENVS_IN_PROJECT="true"
+
+
+# Zig dev version
+export PATH="/Users/mcproger/Work/zig-macos-aarch64-0.14.0:${PATH}"
+
